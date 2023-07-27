@@ -1,0 +1,387 @@
+---
+meta:
+  lang: en
+  title: Healthcare Claims Processing | Claims Processing System | PCH Global
+  image: ""
+  description: PCH Global is a unified platform for digital submission and tracking of your healthcare claims, attachments, and other paper documents.
+layout: base_inner
+eleventyNavigation:
+  key: Pricing
+  order: 3
+---
+<section class="banner-section overflow-hidden position-relative mx-n3">
+    <div>
+        <img src="{{'/assets/images/pricing-banner.jpg' | url }}" class="bannerImg" alt="blogs banner"/>
+        <div class="container p-0">
+            <div class="banner-content">
+                <h1 class="banner-header">
+                    <span class="header-content">
+                        <span class="main-title"> 
+                            <span>Simple and Transparent Pricing</span>
+                        </span>
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </div>
+    {% include "common/banner/banner-stages-component.njk" %}
+</section>
+<section class="estimated-calculator-box light-section" id="estimatedCalculatorBoxSection">
+    <div class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-center mb-5 whiteDivSection-box-link">
+                <a href="#FAQ" class="link ms-4">FAQ</a>
+                <a href="#estimatedCalculatorBoxSection" class="link ms-4">Savings Calculator</a>
+                <a href="/pages/payer-list/" class="link ms-4">Payers List</a>
+                <a href="/pages/solutions/providers/" class="link ms-4">Back to Providers</a>
+            </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center content-box-wrapper">
+            <div class="col-md-7">
+                <div class="d-flex flex-column align-items-center">
+                    <h4 class="content-box-title p-32 normal-text" title="Estimated plan savings calculator">Estimated plan savings calculator</h4>
+                    <p class="content-box-discription">Paper Transactions Per Month (Includes Appeals, Claims, & Attachment)
+                        <span>*</span></p>
+                    <input type="text" class="calculator-input container-fluid"/>
+                    <button class="calculator-submit-btn container-fluid" data-bs-toggle="modal" data-bs-target="#SavingCalculatorpopup">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="dark-section dark-blue-bg row" id="darkSection">
+    <div class="row">
+        <div class="global-box-wrapper overflow-hidden position-relative pb-5">
+            <div class="container pricing-global-box">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="global-box-content text-left">
+                            <h2 class="global-box-title" title="Pricing">
+                                Pricing</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="plan-type"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-xl-flex d-lg-flex  flex-row d-md-flex flex-sm-column">
+                        <div class="plan-details-section">
+                            <h3 class="text-center fw-bold" title="Free Trial">Free Trial asdadsad</h3>
+                            <h2 class="text-center fw-bold" title="$0/Month">
+                                <span class="fw-normal">$</span>0<span>/Month</span></h2>
+                            <p>100 Documents per month for Exclusive Payers</p>
+                            <ul class="list-unstyled">
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>
+                                    The Free Trial monthly plan includes:
+                                    <span>Transaction per month</span>
+                                </li>
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>
+                                    Exclusive Payers:
+                                    <span>
+                                        100 Documents Copy</span>
+                                </li>
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>Days in Cloud Storage:
+                                    <span>30</span></li>
+                            </ul>
+                            <button data-bs-toggle="modal" data-bs-target="#signUpModal" data-bs-whatever="@mdo1">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-xl-flex  flex-row d-lg-flex d-md-flex flex-sm-column">
+                        <div class="plan-details-section">
+                            <h3 class="text-center fw-bold" title="Premium">Premium</h3>
+                            <h2 class="text-center fw-bold" title="$18/Month">
+                                <span class="fw-normal">$</span>19<span>/Month</span></h2>
+                            <p>100 Documents for Exclusive Payers &100 images for Other Payers</p>
+                            <ul class="list-unstyled">
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>The Premium monthly plan includes:
+                                    <span>Transaction per month</span>
+                                </li>
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>
+                                    Exclusive Payers:
+                                    <span>
+                                        100 Documents Copy</span>
+                                </li>
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>Other Payers:
+                                    <span>
+                                        100 images</span></li>
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>Postage:
+                                    <span>At Cost</span></li>
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>Days in Cloud Storage:
+                                    <span>90</span></li>
+                            </ul>
+                            <button data-bs-toggle="modal" data-bs-target="#signUpModal" data-bs-whatever="@mdo1">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-xl-flex flex-row d-lg-flex d-md-flex flex-sm-column">
+                        <div class="plan-details-section">
+                            <h3 class="text-center fw-bold" title="Professional">Professional</h3>
+                            <h2 class="text-center fw-bold" title="$49/Month">
+                                <span class="fw-normal">$</span>49<span>/Month</span></h2>
+                            <p>250 Documents for Exclusive Payers & 250images for Other Payers
+                            </p>
+                            <ul class="list-unstyled">
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>The Professional monthly plan includes:
+                                    <span>Transaction per month</span>
+                                </li>
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>Exclusive Payers:
+                                    <span>
+                                        250 Documents Copy</span></li>
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>Other Payers:
+                                    <span>
+                                        250 images</span></li>
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>Postage:
+                                    <span>At Cost</span></li>
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>Days in Cloud Storage:
+                                    <span>90</span></li>
+                            </ul>
+                            <button data-bs-toggle="modal" data-bs-target="#signUpModal" data-bs-whatever="@mdo1">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 d-xl-flex d-lg-flex  flex-row d-md-flex flex-sm-column">
+                        <div class="plan-details-section">
+                            <h3 class="text-center fw-bold" title="Enterprise">Enterprise</h3>
+                            <h2 class="text-center fw-bold" title="$99/Month">
+                                <span class="fw-normal">$</span>99<span>/Month</span></h2>
+                            <p>2,000 Documents for Exclusive Payers & 2,000images for Other Payers</p>
+                            <ul class="list-unstyled">
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>The Enterprise monthly plan includes:
+                                    <span>Transaction per month</span>
+                                </li>
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>Exclusive Payers:
+                                    <span>
+                                        2000 Documents Copy</span></li>
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>Other Payers:
+                                    <span>
+                                        2000 images</span></li>
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>Postage:
+                                    <span>At Cost</span></li>
+                                <li><img src="{{'/assets/images/check-icon.svg' | url}}"/>Days in Cloud Storage:
+                                    <span>120</span></li>
+                            </ul>
+                            <button data-bs-toggle="modal" data-bs-target="#signUpModal" data-bs-whatever="@mdo1">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="dark-section dark-blue-bg row" id="FAQ">
+    <div class="row global-box-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="global-box-content text-left">
+                        <h2 class="global-box-title" title="FAQs">FAQs</h2>
+                        <p>
+                            Explore our articles to gain insight into the latest healthcare technology trends, guidance, and perspectives from prominent industry experts...
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 nav-tabs col-lg-12 d-flex justify-content-center flex-wrap" id="nav-tab" role="tablist">
+                    <a href="#" class="tab-anch d-inline-block" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-controls="general" aria-selected="false" tabindex="-1">
+                        General
+                    </a>
+                    <a href="#" class="tab-anch d-inline-block" id="bisr-tab" data-bs-toggle="tab" data-bs-target="#bisr-index" type="button" role="tab" aria-controls="bisr-index" aria-selected="false" tabindex="-1">
+                        Billing, Invoice, Subscription, Refund
+                    </a>
+                    <a href="#" class="tab-anch d-inline-block active" id="user-management-tab" data-bs-toggle="tab" data-bs-target="#user-management-index" type="button" role="tab" aria-controls="user-management-index" aria-selected="true">
+                        User management
+                    </a>
+                    <a href="#" class="tab-anch d-inline-block" id="cptp-tab" data-bs-toggle="tab" data-bs-target="#cptp-index" type="button" role="tab" aria-controls="cptp-index" aria-selected="false" tabindex="-1">
+                        Cancel, Pause and Transfer Plans
+                    </a>
+                    <a href="#" class="tab-anch d-inline-block" id="ppc-tab" data-bs-toggle="tab" data-bs-target="#ppc-index" type="button" role="tab" aria-controls="ppc-index" aria-selected="false" tabindex="-1">
+                        Payer promo coupon
+                    </a>
+                    <a href="#" class="tab-anch d-inline-block" id="arr-tab" data-bs-toggle="tab" data-bs-target="#arr-index" type="button" role="tab" aria-controls="arr-index" aria-selected="false" tabindex="-1">
+                        Authorization requests/Referrals
+                    </a>
+                    <a href="#" class="tab-anch d-inline-block" id="accs-tab" data-bs-toggle="tab" data-bs-target="#accs-index" type="button" role="tab" aria-controls="accs-index" aria-selected="false" tabindex="-1">
+                        Appeal, Claim &amp; Correspondence submission
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-sm-8 col-md-8 col-lg-8">
+                    <form>
+                        <input class="fullWidthInputOnBlueBg" type="text" placeholder="Type keyword to find answers" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="light-section" id="whiteDivSection">
+    <div class="container faqContainer">
+        <div class="row">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne" title="Does PCH Global cater to dental claims?">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                            Does PCH Global cater to dental claims?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne" style="">
+                        <div class="accordion-body">
+                            <p>Yes. PCH Global caters to both medical (professional and institutional) as well as Dental claims.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo" title="Is PCH Global accessible from anywhere and across time zones?">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Is PCH Global accessible from anywhere and across time zones?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <p>Yes. PCH Global is hosted on the cloud, and we offer 24/7 accessibility to all users, 365 days a year.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree" title="Is PCH Global compliant with HIPAA regulations?">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Is PCH Global compliant with HIPAA regulations?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <p>Yes. PCH Global is compliant with all applicable HIPAA regulations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingfour" title="Is PCH Global is a secure Payment Portal? Is it safe to transmit my card info to PCH global?">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
+                            Is PCH Global is a secure Payment Portal? Is it safe to transmit my card info to PCH global?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfour">
+                        <div class="accordion-body">
+                            <p>Yes. PCH Global is a secure payment portal and is PCI-compliant as well. All card information is encrypted for secure payment processing in the payment gateway system.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingfive" title="After the sign in/log in to PCH Global, how can I contact your healthcare team to inquiry about the details of any of the Exela’s health care products?">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="panelsStayOpen-collapsefive">
+                            After the sign in/log in to PCH Global, how can I contact your healthcare team to inquiry about the details of any of the Exela’s health care products?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingfive">
+                        <div class="accordion-body">
+                            <p>You can click the “Contact Us” tab under the “Help” menu and provide your requirements. One of our sales representatives will call you shortly. You can also visit www.exelatech.com or call our Helpdesk at 1-844-935-2832.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingsix" title="Can you briefly explain the “Help Me” menu in the PCH Global product?">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="false" aria-controls="panelsStayOpen-collapsesix">
+                            Can you briefly explain the “Help Me” menu in the PCH Global product?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingsix">
+                        <div class="accordion-body">
+                            <p>The “Help Me” menu is designed to support the self-management of the PCH Global web portal. It has FAQs, User Guides, and Training Videos for each module, which will assist you with navigating the system easily.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingseven" title="Where Can I see the notifications?">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseseven" aria-expanded="false" aria-controls="panelsStayOpen-collapseseven">
+                            Where Can I see the notifications?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseseven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingseven">
+                        <div class="accordion-body">
+                            <p>The “Notification” icon helps you to see notifications regarding your subscription renewals, reminders etc.,</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingeight" title="How will the billing information entered during “My Profile” or “My Account Set Up” be used?">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseeight" aria-expanded="false" aria-controls="panelsStayOpen-collapseeight">
+                            How will the billing information entered during “My Profile” or “My Account Set Up” be used?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseeight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingeight">
+                        <div class="accordion-body">
+                            <p>When you are using the “Direct Entry of Claims” option in PCH Global, the Billing Information that you have entered will be auto populated based on your selection in the Document Submission screen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contactUs">
+            <p class="contactUsPara">Can't find what you're looking for?
+                <a type="button" data-bs-toggle="modal" data-bs-target="#contactUsModal" data-bs-whatever="@mdo">Contact Us</a>
+            </p>
+        </div>
+    </div>
+</section>
+<section class="light-section mt-5 mb-5" id="whiteDivSection">
+    <div class="content-box-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h2 class="content-box-title cerulean-text" title="Savings with PCH">
+                        Savings with PCH</h2>
+                </div>
+            </div>
+            <div class="row Savings-with-PCH-content">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h4 title="Claim to Include but not limited to:">Claim to Include but not limited to:</h4>
+                    <p >Professional, Institutional & Dental Claims, Primary / Secondary/ Tertiary Claims with EOB/EOMB, Corrected Claims, Resubmission Claims, Member Claims, Roster Claims and Vaccination Claims.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h4 title="Attachment for Appeals & Grievances to Include but not limited to:">
+                        Attachment for Appeals & Grievances to Include but not limited to:</h4>
+                    <p>Appeals and Grievances, Medical Records, Clinical Records, Additional Information, Copy of EOB/EOMB, Critical Claim Information, Consent Form, Trauma Report, Claim Payment Dispute, Claim Payment Dispute-Proof of Timely Filing/Member Cost Share/Claims Editing (CCI/LCD/NCD).</p>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h4 title="Other Attachment Include but not limited to:">Other Attachment Include but not limited to:</h4>
+                    <p>Copy of ID Card, Copy of Medicare Card, Date of Injury, Invoice, Itemized Bill, Pre-Certification/Authorization Information, Referral, W9, Cost Containment-Overpayment/Refund/COB & Hospice, Provider Information Change Form, DME Review.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<div class="modal fade" id="SavingCalculatorpopup" aria-labelledby="talkToExpertModalLabel" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0 pt-0">
+                <h3>
+                    
+                </h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 mb-2">
+                            <p class="mb-0">Recommended Plan :</p>
+                            <h3>Premium</h3>
+                        </div>
+                            <div class="col-sm-12 mb-4">
+                            <p class="mb-0">Estimated - Direct Cost Savings per annum:</p>
+                            <h3>$16,992</h3>
+                        </div>
+                         <div class="col-sm-12">
+                            <button class="primaryBtn w-100">Submit</button>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>

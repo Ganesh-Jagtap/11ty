@@ -1,0 +1,26 @@
+<header id="fixed-nav" style="height: auto !important;">
+  <nav class="navbar navbar-expand-lg fixed-top" id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{{ '/' | url }}">
+        <img class="white-logo" src="{{'/assets/images/global-logo-w.png' | url }}" alt="Logo" title="Logo"/>
+        <img class="white-pch-symbol" src="{{'/assets/images/white-pch-symbol.svg' | url }}" alt="Logo" title="Logo"/>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="header__bar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        {% include "shared/header/navigation.njk" %}
+      </div>
+    </div>
+  </nav>
+</header>
+
+{% include "shared/modals/signup-modal.njk" %}
+
+{% include "shared/modals/talk-to-expert-modal.njk" %}
+
+{% include "shared/modals/contact-us-modal.njk" %}

@@ -1,0 +1,53 @@
+<div class="modal fade" id="talkToExpertModal" tabindex="-1" aria-labelledby="talkToExpertModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>
+                    Talk to an Expert
+                </h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row">
+                        <div class="col-sm-8 col-md-8 col-lg-8">
+                            <div class="form-group d-flex align-items-end">
+                                <div class="profileImage">
+                                    <img src="{{ '/assets/images/expertProfileImg.svg' | url }}" alt="Expert Profile" title="Expert Profile"/>
+                                </div>
+                                <div class="recipient-box chat-box">
+                                    <p class="p-16">The Expert</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-sm-8 col-md-8 col-lg-8">
+                            <div class="form-group d-flex align-items-end">
+                                <div class="receiver-box chat-box">
+                                    <p class="p-16">You</p>
+                                </div>
+                                <div class="profileImage1">
+                                    <img src="{{ '/assets/images/expertProfileImg1.svg' | url }}" alt="Expert Profile" title="Expert Profile"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-group">
+                                <textarea class="form-control" id="recipient-name" placeholder="Enter message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="form-group d-grid">
+                                <button class="primaryBtn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
