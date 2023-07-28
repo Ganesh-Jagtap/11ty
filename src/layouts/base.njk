@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>{{ site.title }} - {{ title or meta.title }}</title>
     <link rel="stylesheet" href="{{ '/dist/app.css' | url }}"/>
-    <link rel="stylesheet" href="https://uidemo1.exela.global/pch/assets/css/plugins/animate.min.css"/>
+    <link rel="stylesheet" href="{{'/assets/css/animate.min.css' | url }}"/> 
     {% include "shared/header/meta.njk" %}
   </head>
   <body>
     <main id="main">
       {% include "shared/header/header.njk" %}
+      <div id="home">
       {{ content | safe }}
+      </div>
     </main>
     <script type="text/javascript" src="{{ '/dist/app.js' | url }}"></script> 
     <script src="{{'/assets/js/common.js' | url }}"></script>

@@ -1437,22 +1437,20 @@ article {
   height: $full-vh;
   width: $full-width;
   // overflow: hidden;
-  // padding: 0;
+  padding: 0;
   // overflow: hidden scroll;
-  // height: 100vh;
-  // overflow-y: scroll;
+  height: 100vh;
+  overflow-y: scroll;
   // scroll-snap-points-y: repeat(300px);
   // scroll-snap-destination: 0 0;
-  scroll-snap-type: block;
   scroll-snap-type: y mandatory;
-  scroll-snap-points-y: repeat(100vh);
+  // scroll-snap-type: mandatory;
   // scroll-behavior: smooth;
 
   section {
     height: $full-vh;
     scroll-snap-align: start;
     position: relative;
-    scroll-snap-type: both proximity;
   }
 }
 
@@ -3679,4 +3677,11 @@ body .payerList-box-wrapper{
       border-radius: 7px;
     }
   }
+}
+.opacity0{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.opacity-1{
+  opacity: 1 !important;
 }

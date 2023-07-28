@@ -1,3 +1,4 @@
+
 window.addEventListener('scroll', function () {
   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
   let whiteSymbol = document.querySelector('#nav .white-pch-symbol')
@@ -57,6 +58,11 @@ scrollToTopBtn.addEventListener('click', () => {
 const container = document.querySelector('#fullpage');
 const items = document.querySelectorAll('#fullpage section');
 container.addEventListener('wheel', (event) => {
+
+  const homeFooter = document.querySelector("#home #footer");
+  homeFooter.classList.add('opacity0')
+  console.log(homeFooter)
+
   event.preventDefault();
   const delta = event.deltaY;
 
@@ -96,10 +102,14 @@ container.addEventListener('scroll', () => {
   }
 
   if (snappedItemIndex == 1) {
+    const whatIsPch = document.getElementById('whatIsPch');
     var targetElement = document.getElementById('nav');
     const topBtn = this.document.getElementById('scrollTopBtn')
     targetElement.classList.add('navbar-white');
     topBtn.classList.add('topBtn');
+    setTimeout(() => {
+      whatIsPch.classList.add('opacity-1')
+    }, 100);
     const element = document.querySelector('#section2 h2');
     if (element) {
       element.classList.add('animate__animated');
@@ -125,11 +135,14 @@ container.addEventListener('scroll', () => {
     }
   }
   else if (snappedItemIndex == 2) {
+    const whatWeDo = document.getElementById('whatWeDo');
     var targetElement = document.getElementById('nav');
     const topBtn = this.document.getElementById('scrollTopBtn')
     targetElement.classList.add('navbar-white');
     topBtn.classList.add('topBtn');
-
+    setTimeout(() => {
+      whatWeDo.classList.add('opacity-1');
+    }, 100);
     const elementWWDBG = document.querySelector('#whatWeDoTextDiv');
     if (elementWWDBG) {
       elementWWDBG.classList.add('animate__animated');
@@ -151,11 +164,14 @@ container.addEventListener('scroll', () => {
   }
   else if (snappedItemIndex == 3) {
     
+    const certificationsAndAwards = document.getElementById('certificationsAndAwards');
     var targetElement = document.getElementById('nav');
     const topBtn = this.document.getElementById('scrollTopBtn')
     targetElement.classList.add('navbar-white');
     topBtn.classList.add('topBtn');
-
+    setTimeout(() => {
+      certificationsAndAwards.classList.add('opacity-1');
+    }, 100);
     const element = document.querySelector('#section4 .awards-text-col');
     if (element) {
       element.classList.add('animate__animated');
@@ -175,11 +191,14 @@ container.addEventListener('scroll', () => {
     }
   }
   else if (snappedItemIndex == 4) {
+    const pbppSection = document.getElementById('pbppSection');
     var targetElement = document.getElementById('nav');
     const topBtn = this.document.getElementById('scrollTopBtn')
     targetElement.classList.add('navbar-white');
     topBtn.classList.add('topBtn');
-
+    setTimeout(() => {
+      pbppSection.classList.add('opacity-1');
+    }, 100);
     const elementDiv = document.querySelector('#section5 .payers-section-row');
     if (elementDiv) {
       elementDiv.classList.add('animate__animated');
@@ -226,11 +245,14 @@ container.addEventListener('scroll', () => {
     }, 2200)
   }
   else if (snappedItemIndex == 5) {
+    const clientSection = document.getElementById('clientSection');
     var targetElement = document.getElementById('nav');
     const topBtn = this.document.getElementById('scrollTopBtn')
     targetElement.classList.add('navbar-white');
     topBtn.classList.add('topBtn');
-
+    setTimeout(() => {
+      clientSection.classList.add('opacity-1');
+    }, 100);
     const elementh2 = document.querySelector('#section6 h2');
     if (elementh2) {
       elementh2.classList.add('animate__animated');
@@ -276,11 +298,14 @@ container.addEventListener('scroll', () => {
 
   }
   else if (snappedItemIndex == 6) {
+    const blogSection = document.getElementById('blogSection');
     var targetElement = document.getElementById('nav');
     const topBtn = this.document.getElementById('scrollTopBtn')
     targetElement.classList.add('navbar-white');
     topBtn.classList.add('topBtn');
-
+    setTimeout(() => {
+      blogSection.classList.add('opacity-1')
+    }, 100);
     const elementh12 = document.querySelector('#section7 #blogSection1 h2');
     if (elementh12) {
       elementh12.classList.add('animate__animated');
@@ -345,17 +370,20 @@ container.addEventListener('scroll', () => {
     }
   }
   else if (snappedItemIndex == 7) {
+    const homeFooter = document.querySelector("#home #footer");
     var targetElement = document.getElementById('nav');
     const topBtn = this.document.getElementById('scrollTopBtn')
     targetElement.classList.add('navbar-white');
     topBtn.classList.add('topBtn');
     const footer = document.getElementById('footer');
+    setTimeout(() => {
+      homeFooter.classList.add('opacity-1')
+    }, 100);
     if(footer){
       footer.classList.add('animate__animated')
       footer.classList.add('animate__fadeInUp')
       footer.classList.add('animate__delay-1s');
     }
-    
     
   } else if(snappedItemIndex == 8 ){
     const footer = document.getElementById('footer');
